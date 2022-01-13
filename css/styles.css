@@ -82,7 +82,9 @@ body {
 .site-nav .item:last-child {
   margin-right: 0;
 }
-
+.site-nav .link.current {
+  position: relative;
+}
 .site-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -93,6 +95,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.link.current::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -225,6 +238,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -256,11 +270,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
-  
 }
 .modal-icon {
-  width: 11px;
-  height: 11px;
   fill: #000000;
 }
 /* ----------------------НАШИ ПРЕИМУЩЕСТВА-------------------------------------------------------------------------------- */
