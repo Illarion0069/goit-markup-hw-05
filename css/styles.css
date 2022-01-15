@@ -51,8 +51,6 @@ body {
 .active-link:hover,
 .active-link:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -112,14 +110,14 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 .site-nav .link {
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------РАЗДЕЛ КОНТАКТЫ В НАВИГАЦИИ------------------------------------------------------------------------ */
@@ -140,6 +138,8 @@ body {
   flex-direction: row-reverse;
   display: flex;
   color: var(--text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-mail-icon,
@@ -156,8 +156,6 @@ body {
 .item-mail-link:hover,
 .item-mail-link:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-mail-link:hover .item-mail-link,
 .item-mail-link:focus .item-mail-link {
@@ -166,8 +164,6 @@ body {
 .item-phone-link:hover,
 .item-phone-link:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-phone-link:hover .item-phone-link,
 .item-phone-link:focus .item-phone-link {
@@ -376,6 +372,8 @@ body {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
@@ -385,8 +383,6 @@ body {
 .team-social-link:focus {
   background-color: #2196f3;
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------------ПОСТОЯННЫЕ КЛИЕНТЫ----------------------------------------------------------------------------------------- */
 .clients {
@@ -403,8 +399,6 @@ body {
   color: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients {
@@ -423,6 +417,8 @@ body {
   box-sizing: border-box;
   color: #afb1b8;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item {
   margin-right: 30px;
@@ -465,13 +461,10 @@ body {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button {
   cursor: pointer;
-}
-.button {
   background-color: #f5f4fa;
   color: var(--primary-title-color);
   font-family: inherit;
@@ -483,6 +476,8 @@ body {
   border-style: none;
   padding: 6px 22px;
   text-align: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------- ПРИМЕРЫ РАБОТ ------------------------------------------------------------------------------------------- */
@@ -552,15 +547,14 @@ body {
   color: #ffffff;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
-
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 
 .examples .item:hover .examples-hover {
   opacity: 1;
   transform: translateY(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------------BACKDROP----------------------- */
 .backdrop {
@@ -571,13 +565,15 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  transition-duration: 1000ms;
+  transition-duration: 750ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: relative;
@@ -655,6 +651,8 @@ body {
   height: 44px;
   color: var(--primary-bg-color);
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-right-logo {
   background-position: center;
@@ -695,10 +693,10 @@ body {
 .address .item {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .item:hover,
 .address .item:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
